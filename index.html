@@ -15,7 +15,7 @@
 				<ul>
 					<li><a href="https://jinsuhongg.github.io/">Home</a></li>
 					<li><a href="https://jinsuhongg.github.io/publications/">Publications</a></li>
-					<li><a href="https://jinsuhongg.github.io/research/"><b>Research</b></a></li>
+					<li><a href="https://jinsuhongg.github.io/research/">Research</a></li>
 					<li><a href="https://jinsuhongg.github.io/data-resource-map/"><b>Resource map</b></a></li>
 				</ul>
 			</nav>
@@ -24,11 +24,22 @@
 	<hr style="width:75%; margin-left: 250px; height:1px; background: gray; border:none;">
 	<!-- -----------------------------------top header---------------------------------- -->
 
-	<h1>Data resource map</h1>
-	<h2>Solar flares</h2>
-	<div>
-		<li><a href="https://xrt.cfa.harvard.edu/flare_catalog/">Hinode flare catalog</a></li>
-		<li><a href="https://www.ngdc.noaa.gov/stp/satellite/goes-r.html">GOES flare catalog</a></li>
+	
+	<div class ="body_cotainer">
+		<div class = "main_contents">
+			<h1>Data resource map</h1>
+			<ol>
+				<h2>1. Solar flares</h2>
+				<ol>
+					<a href="https://xrt.cfa.harvard.edu/flare_catalog/">a. Hinode flare catalog</a><br><br>
+					<a href="https://www.ngdc.noaa.gov/stp/satellite/goes-r.html">b. GOES flare catalog</a>
+				</ol>
+			</ol>
+			
+			
+			
+			
+		</div>
 	</div>
 
 </body>
@@ -65,7 +76,7 @@
 
 	.top_cotainer{
 		display: grid;
-		grid-template-columns: [first] 350px [time] 250px [body_start] auto [body_end] 250px [etc] 250px [end];
+		grid-template-columns: [first] 350px [time] 250px [body_start] auto [body_end] 400px [etc] 250px [end];
   		/* grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
 		/* border: 3px solid green; */
 	}
@@ -86,23 +97,13 @@
 
 	.body_cotainer{
 		display: grid;
-		grid-template-columns: [first] 20% [body_start] auto [middle_left] 5% [middle_right] 600px [body_end] 15% [end];
+		grid-template-columns: [first] 25% [body_start] auto [middle_left] 25% [end];
 	}
 
-	.photo{
+	.main_contents{
 		grid-column-start: body_start;
 		grid-column-end: middle_left;
-		/* border: 3px solid green; */
-	}
-
-	.intro{
-		grid-column-start: middle_right;
-		grid-column-end: body_end;
-		margin-top: 30px;
-		text-align: justify;
-		font-size:20px;
-		line-height: 1.5;
-		/* border: 3px solid green; */
+		border: 3px solid green;
 	}
 
 </style>
